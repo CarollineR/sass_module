@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.branding h2 {
+  font-family: sass;
+  font-size: 20px;
+  color: #f5f6fa;
+}
+
+header {
+  padding-top: 20px;
+  padding: 10px 0;
+  background-color: #182C61;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+
+.menu li a {
+  color: #182C61;
+  text-decoration: none;
+}
+
+section {
+  padding: 56px 0;
+}
+
+.products {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+
+.products img {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+  width: auto;
+  border-radius: 16px;
+}
+
+h4 {
+  margin-left: 15px;
+}
+
+.button {
+  font-family: Asap Condensed, sans-serif;
+  font-size: 20px;
+  display: block;
+  background-color: #273c75;
+  color: #182C61;
+  text-align: center;
+  padding: 10px 145px;
+  border-radius: 10px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #130f40;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .products {
+    display: block;
+  }
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
